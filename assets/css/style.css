@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+.ecommerce{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "menu main main main"
+    "footer footer footer footer";
+    height: 100vh;
+}
+
+header{
+    background-position: center;
+    background-size: cover;
+    grid-area: header;
+    background-image: url(../img/img-header.jpg);
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar h1{
+    font-size: 3em;
+    color: white;
+}
+
+menu{
+    grid-area: menu;
+    background-color: rgba(255, 166, 0, 0.548);
+}
+
+main{
+    grid-area: main;
+    background-color: rgba(255, 166, 0, 0.548);
+}
+
+footer{
+    grid-area: footer;
+}
+
+.trademark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
